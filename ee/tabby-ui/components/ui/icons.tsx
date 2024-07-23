@@ -17,7 +17,8 @@ import {
   Search,
   Sparkles,
   Star,
-  Tag
+  Tag,
+  X
 } from 'lucide-react'
 
 import { cn } from '@/lib/utils'
@@ -1527,6 +1528,10 @@ function IconBug({ className, ...props }: React.ComponentProps<typeof Bug>) {
   return <Bug className={cn('h-4 w-4', className)} {...props} />
 }
 
+function IconRemove({ className, ...props }: React.ComponentProps<typeof X>) {
+  return <X className={cn('h-4 w-4', className)} {...props} />
+}
+
 export {
   IconEdit,
   IconNextChat,
@@ -1612,5 +1617,6 @@ export {
   IconTag,
   IconFileText,
   IconApplyInEditor,
-  IconBug
+  IconBug,
+  IconRemove
 }
